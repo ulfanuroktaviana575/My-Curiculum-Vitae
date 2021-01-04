@@ -11,29 +11,34 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
-    <title>Hello, world!</title>
+    <!-- my fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
+    <title>My Curiculum Vitae</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-inverse navbar-light fixed-top" style="background-color:  #20c997;">
         <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
+            <a class="navbar-brand" href="#">My Curiculum Vitae</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" onclick="ScrollTo('about')">About</a>
+                <ul class="navbar-nav my-2 my-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#" onclick="ScrollTo('about')">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="ScrollTo('portofolio')">Portfolio</a>
+                        <a class="nav-link" href="#" onclick="ScrollTo('portofolio')">Experience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" onclick="ScrollTo('contact')">Contact</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -42,312 +47,406 @@
     <!-- jumbotron -->
     <div class="jumbotron ">
         <div class="container text-center">
-            <img class="rounded-circle" width="20%" src="img/profil.png" alt="">
+            <img class="rounded-circle" src="img/profile.jpg" alt="">
             <h1>Ulfah Nur Oktaviana</h1>
-            <p class="lead">Website Developer | Public Speaker | Mobile Developer</p>
+            <p class="lead">Website Developer | Student</p>
         </div>
     </div>
 
     <!-- akhir jumbotron -->
 
-
     <!-- about -->
-    <section class=" about" id="about">
+    <section class="about" id="about">
         <div class="container text-center">
-            <h2>About</h2>
+            <h2>About Me</h2>
             <hr>
-            <div class="row">
-                <div class="col-sm text-justify">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga odit fugiat, nisi porro non eaque!
-                        Corporis quibusdam corrupti, repellendus, neque amet fugit quidem commodi voluptatibus officia
-                        unde
-                        at
-                        adipisci impedit?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, esse eveniet. A ratione fugit
-                        aliquid, accusamus quod ducimus! Alias, repellat vel animi ullam velit earum iure qui reiciendis
-                        placeat iusto!</p>
+            <div class="row justify-content-center">
+                <div class="col-sm-8 justify-content-center">
+                    <!-- deskripsi singkat -->
+                    <h4 class="justify-content-center">Profil</h4>
+                    <div class="text-justify">
+                        <p>
+                            Hallo perkenalkan nama saya Ulfah Nur Oktaviana teman-teman dapat memanggil saya Ulfah. saya
+                            memiliki kondisi
+                            kesehatan yang baik, selain itu saya juga mampu berkomunikasi dengan baik
+                            dalam tim maupun menjadi pembicara di suatu acara. sedangkan untuk ketertarikan saya adalah
+                            menjadi seorang full
+                            stack developer. semoga saya dapat internship di Hummasoft untuk meningkatkan dan belajar
+                            jauh lebih banyak lagi
+                            mengenai web developer
+                        </p>
+                    </div>
+                    <!-- akhir deskripsi singkat -->
 
-                </div>
-                <div class="col-sm text-justify">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga odit fugiat, nisi porro non eaque!
-                        Corporis quibusdam corrupti, repellendus, neque amet fugit quidem commodi voluptatibus officia
-                        unde
-                        at
-                        adipisci impedit?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veniam nesciunt ratione eius
-                        repudiandae expedita veritatis sapiente, excepturi magni non blanditiis! Nesciunt molestiae quo
-                        nulla possimus nobis! Ipsa, a. Nesciunt.</p>
+                    <!-- biodata diri -->
+                    <h4>Biodata Diri</h4>
+                    <div class="text-justify justify-content-center">
+                        <table class="styled-table">
+                            <thead>
+                                <tr>
+                                    <th>Judul</th>
+                                    <th>Keterangan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="active-row">
+                                    <td>Nama</td>
+                                    <td>Ulfah Nur Oktaviana</td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>Jenis Kelamin</td>
+                                    <td>Perempuan</td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>Tempat/Tanggal Lahir</td>
+                                    <td>Tulungagung, 11 Oktober 1999</td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>Alamat</td>
+                                    <td>Desa Balesono RT 002, RW 002, Kec.Ngunut Kab.Tulungagung, Kode Pos : 66292, Jawa
+                                        Timur</td>
+                                </tr>
+                                <!-- and so on... -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- akhir biodata diri -->
+
+                    <!-- pendidikan -->
+                    <h4 class="justify-content-center">Riwayat Pendidikan</h4>
+                    <div class="text-center justify-content-center">
+                        <div class="wrapper">
+                            <div class="timeline">
+                                <dl class="timeline--entry">
+                                    <dt class="timeline--entry__title">SMP (2006-2012)</dt>
+                                    <dd class="timeline--entry__detail">SD Negeri 026 Samarinda Sebrang
+                                </dl>
+                                <dl class="timeline--entry">
+                                    <dt class="timeline--entry__title">SMP (2012-2015)</dt>
+                                    <dd class="timeline--entry__detail">SMP Negeri 1 Kalidawir
+                                </dl>
+                                <dl class="timeline--entry">
+                                    <dt class="timeline--entry__title">SMA (2015-2018)</dt>
+                                    <dd class="timeline--entry__detail">SMA Negeri 1 Ngunut
+                                </dl>
+                                <dl class="timeline--entry">
+                                    <dt class="timeline--entry__title">Kuliah S1 (2018-Sekarang)</dt>
+                                    <dd class="timeline--entry__detail">Universitas Muhammadiyah Malang
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- akhir pendidikan -->
                 </div>
             </div>
-
         </div>
     </section>
     <!-- akhir about -->
 
-
-    <!-- profile company -->
-    <section class="profile pb-5" id="profile">
-        <div class="container">
-            <div class="row justify-content-md-center text-center">
-                <div class="col-md-3 mr-5">
-                    <img src="img/1.png" width="50%" alt="" class="mb-5">
-                    <h2 class="mb-5">Spped Up Development</h2>
-                    <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur,
-                        molestias.</p>
+    <!-- Modal -->
+    <!-- modal Belajar Fundamental Front-End -->
+    <div class="modal fade" id="fundamental" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Belajar Fundamental Front-End Dicoding</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="col-md-3 mr-5">
-                    <img src="img/1.png" width="50%" alt="" class="mb-5">
-                    <h2 class="mb-5">User Experience Focused</h2>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aperiam
-                        aspernatur error!
-                        Natus voluptatem quibusdam deleniti exercitationem, dolores perspiciatis minus!</p>
+                <div class="modal-body">
+                    <img src="img/portfolio 4.jpg" style="width: 100%;" class="img-fluid" alt="Responsive image">
                 </div>
-                <div class="col-md-3 mr-5">
-                    <img src="img/1.png" width="50%" alt="" class="mb-5">
-                    <h2 class="mb-5">Easy To Work with</h2>
-                    <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur,
-                        molestias.</p>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- akhir profile company -->
-
-
-    <!-- paralax -->
-    <div class="jumbotron1">
-        <div class="container text-center">
-            <h1 class="pt-5 ">Ulfah Nur Oktaviana</h1>
-            <p class="lead">Website Developer | Public Speaker | Mobile Developer</p>
         </div>
     </div>
-
-    <!-- paralax -->
-
-
-    <!-- About Company -->
-
-    <section class="about-company ">
-        <div class="container">
-            <div class="row text-center justify-content-md-center">
-                <div class="col-md-8 ">
-                    <h2>Contact Us</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto magnam non provident laborum
-                        quod nam iusto pariatur possimus fugiat et, temporibus itaque nobis neque facilis fugit, eos
-                        odit
-                        dolorem nihil?</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae iste saepe dolores odit
-                        labore officia non ab odio optio quaerat debitis officiis suscipit nisi, magni in doloribus et
-                        error corrupti.</p>
+    <!-- AKhir belajar fundamental Frond-end Web -->
+    <!-- modal belajar dasar Pemrograman Web -->
+    <div class="modal fade" id="dasar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Belajar Fundamental Front-End Dicoding</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/portfolio 5.jpg" style="width: 100%;" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- akhir about Company -->
-
-    <!-- carousel -->
-
-    <section class="carousel-section text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <h2>Picture</h2>
-                    <hr>
+    </div>
+    <!-- akhir modal belajar dasar pemrograman web -->
+    <!-- modal hmif -->
+    <div class="modal fade" id="hmif" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Anggota Divisi Minat Bakat 2019/2020</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/portfolio 6.jpg" style="width: 100%;" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md caroul-shadow">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner w">
-                            <div class="carousel-item active">
-                                <img src="img/1.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/2.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/3.png" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </section>
-    <!-- end carousel -->
+    </div>
+    <!-- akhir modal hmif -->
+    <!-- modal imc -->
+    <div class="modal fade" id="imc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Acara IMC (Informatic Maba Competition)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/portfolio 7.jpg" style="width: 100%;" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- akhir modal imc -->
+    <!-- modal lp3a -->
+    <div class="modal fade" id="lp3a" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sertifikat Pelatihan Perekrutan Sahabat LP3A</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/portfolio 8.jpg" style="width: 100%;" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- akhir modal lp3a -->
+    <!-- akhir modal -->
 
 
     <!-- portofolio -->
     <section id="portofolio" class="portofolio pb-5">
-        <div class="container ">
+        <div class="container justify-content-center">
             <div class="row  text-center pt-5">
                 <div class="col-md-12">
-                    <h2>Portofolio</h2>
+                    <h2>Pengalaman</h2>
                     <hr>
                 </div>
             </div>
-            <div class="row">
+            <!-- Pengalaman Web Developer -->
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <h4>Pengalaman Project & Pelatihan Web Developer</h4>
+                </div>
                 <div class="col-md card " style="width: 18rem;">
-                    <a href=""><img width="100%" class="img-thumbnail card-img-top" src="img/1.png" alt=""></a>
+                    <div class="image">
+                        <a href="https://bumdestanjungasri.com/" target="_blank"><img width="100%"
+                                class="img-thumbnail card-img-top" src="img/portfolio 1.png" alt=""></a>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Oktober-November 2020</h5>
+                        <p class="card-text">Membuat Website BUMDES (Badan Usaha Milik Desa) Tanjungan , Mojokerto
+                            menggunakan Framework Laravel.</p>
+                        <a class="btn btn-sm btn-success" href="https://bumdestanjungasri.com/"
+                            target="_blank">Lihat</a>
                     </div>
                 </div>
                 <div class="col-md card " style="width: 18rem;">
-                    <a href=""><img width="100%" class="img-thumbnail card-img-top" src="img/2.png" alt=""></a>
+                    <div class="image">
+                        <a href="https://webgen-event.com/" target="_blank"><img width="100%"
+                                class="img-thumbnail card-img-top" src="img/portfolio 2.png" alt=""></a>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">November-Desember 2020</h5>
+                        <p class="card-text">Membuat Website Berisi Informasi Webinar Untuk Mahasiswa Brawijaya
+                            menggunakan Framework Laravel</p>
+                        <a class="btn btn-sm btn-success" href="https://webgen-event.com/" target="_blank">Lihat</a>
                     </div>
                 </div>
                 <div class="col-md card " style="width: 18rem;">
-                    <a href=""><img width="100%" class="img-thumbnail card-img-top" src="img/3.png" alt=""></a>
+                    <div class="image">
+                        <a href="https://kedaiwebsite2020.web.app/" target="_blank"><img width="100%"
+                                class="img-thumbnail card-img-top" src="img/portfolio 3.png" alt=""></a>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Agustus 2020</h5>
+                        <p class="card-text">Membuat Usaha Pembuatan Website bersama rekan mahasiswa ini merupakan
+                            company profile kami yang dibangun menggunakan html, bootstrap, dan java script</p>
+                        <a class="btn btn-sm btn-success" href="https://kedaiwebsite2020.web.app/"
+                            target="_blank">Lihat</a>
                     </div>
                 </div>
-
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md card" style="width: 18rem;">
-                    <a href=""><img width="100%" class="img-thumbnail card-img-top" src="img/4.png" alt=""></a>
+                    <div class="image">
+                        <a href="#"><img width="100%" class="img-thumbnail card-img-top" src="img/portfolio 4.jpg"
+                                alt=""></a>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Agustus 2020</h5>
+                        <p class="card-text">Menyelesaikan Kelas Pada Dicoding yaitu "Belajar Fundamental Front-End Web
+                            Developer"</p>
+                        <a class="btn btn-sm btn-success" href="" data-target="#fundamental"
+                            data-toggle="modal">Lihat</a>
                     </div>
                 </div>
                 <div class="col-md card " style="width: 18rem;">
-                    <a href=""><img width="100%" class="img-thumbnail card-img-top" src="img/5.png" alt=""></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                    <div class="image">
+                        <a href="#"><img width="100%" class="img-thumbnail card-img-top" src="img/portfolio 5.jpg"
+                                alt=""></a>
                     </div>
-                </div>
-                <div class="col-md card " style="width: 18rem;">
-                    <a href=""><img width="100%" class="img-thumbnail card-img-top" src="img/6.png" alt=""></a>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Juni 2020</h5>
+                        <p class="card-text">Menyelesaikan Kelas Pada Dicoding Dengan Judul "Belajar Dasar Pemrograman
+                            Web"</p>
+                        <a class="btn btn-sm btn-success" href="" data-target="#dasar" data-toggle="modal">Lihat</a>
                     </div>
                 </div>
             </div>
+            <!-- akhir pengalaman Web Developer -->
+
+            <!-- pengalaman Organisasi -->
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <h4>Pengalaman Organisasi</h4>
+                </div>
+                <div class="col-md card " style="width: 18rem;">
+                    <div class="image">
+                        <a href="#"><img width="100%" class="img-thumbnail card-img-top" src="img/portfolio 6.JPG"
+                                alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Juli 2019 - Desember 2020</h5>
+                        <p class="card-text">Anggota Himpunan Mahasiswa Jurusan Informatika (HMIF) Periode Tahun
+                            2019-2020</p>
+                        <a class="btn btn-sm btn-success" href="" data-target="#hmif" data-toggle="modal">Lihat</a>
+                    </div>
+                </div>
+                <div class="col-md card " style="width: 18rem;">
+                    <div class="image">
+                        <a href="#"><img width="100%" class="img-thumbnail card-img-top" src="img/portfolio 7.JPG"
+                                alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">November - Desember 2019</h5>
+                        <p class="card-text">Ketua Pelaksana IMC (Informatic Maba Competition) merupakan acara
+                            pengakraban maba Informatika angkatan 2019</p>
+                        <a class="btn btn-sm btn-success" href="" data-target="#imc" data-toggle="modal">Lihat</a>
+                    </div>
+                </div>
+                <div class="col-md card " style="width: 18rem;">
+                    <div class="image">
+                        <a href="#"><img width="100%" class="img-thumbnail card-img-top" src="img/portfolio 8.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Oktober 2020 - sekarang</h5>
+                        <p class="card-text">Anggota Komunitas LP3A (Lembaga Pengkajian dan Pemberdayaan Perempuan dan
+                            Anak)</p>
+                        <a class="btn btn-sm btn-success" href="" data-target="#lp3a" data-toggle="modal">Lihat</a>
+                    </div>
+                </div>
+            </div>
+            <!-- akhir pengalaman Organisasi -->
         </div>
     </section>
     <!-- akhir portofolio -->
 
-    <!-- contact -->
+    <!-- Contact -->
     <section class="contact" id="contact">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-sm-12">
-                    <h2>Contact</h2>
+        <div class="container text-center">
+            <div class="row text-center justify-content-center">
+                <div class="col-md-8 justify-content-center">
+                    <h2 class="text-center">Contact</h2>
                     <hr>
                 </div>
             </div>
-
-            <div class="row row justify-content-center">
-
-                <div class="col-sm-4">
-                    <div class="card text-white bg-primary mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Primary card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+        </div>
+        <div class="container contact-section">
+            <div class="row no-gutters d-flex contact-info">
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 py-md-5 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fab fa-github"></span>
                         </div>
+                        <h3>Github Account</h3>
+                        <p><a href="https://github.com/ulfanuroktaviana575">ulfanuroktaviana575</a></p>
                     </div>
-
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <h2>About Us</h2>
-                        </li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
                 </div>
-                <div class="col-sm-6 ">
-                    <form>
-                        <div class="form-group">
-                            <label for="formGroupExampleInput">Nama</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput"
-                                placeholder="Masukkan Nama Anda">
-                        </div>
-                        <div class="form-group">
-                            <label for="formGroupExampleInput2">Email</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2"
-                                placeholder="Masukkan Email Anda">
-                        </div>
-                        <div class="form-group">
-                            <label for="formGroupExampleInput3">Telepon</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput3"
-                                placeholder="Masukkan Nomor Telepon Anda">
-                        </div>
-                        <div class="form-group">
-                            <select class="custom-select form-control">
-                                <option selected>Pilihan Anda--</option>
-                                <option value="1">Web Programming</option>
-                                <option value="2">Public Speaker</option>
-                                <option value="3">Mobile Developer</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="textarea">Pesan</label>
-                            <textarea name="textarea" id="textarea" rows="10" class="form-control"
-                                placeholder="Masukkan Pesan Anda"></textarea>
-                        </div>
 
-                        <button type="submit" class="btn btn-primary">Kirim</button>
-
-                    </form>
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 py-md-5 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fas fa-mobile-alt"></span>
+                        </div>
+                        <h3>Nomer Handphone</h3>
+                        <p><a href="https://wa.me/6285858113997">+62 858 581 139 97</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 py-md-5 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class=" fab fa-instagram "></span>
+                        </div>
+                        <h3>Instagram</h3>
+                        <p><a href="https://www.instagram.com/ulfahnur_oktaviana/">ulfahnur_oktaviana</a> </p>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 py-md-5 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fas fa-envelope-square"></span>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a
+                                href="mailto:ulfanuroktaviana575@webmail.umm.ac.id">ulfanuroktaviana575@webmail.umm.ac.id</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- akhir contact -->
+    <!-- akhir Contact -->
 
 
     <!-- footer -->
-
     <footer>
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm-12">
-                    <p>&copy; Copyright 2020 build with <i class="glyphicon glyphicon-heart"></i> by <a
-                            href="http://instagram.com/ulfahnur_oktaviana">Ulfah Nur
-                            Oktaviana</a> </p>
+                    <p>Make With Happy <i class="far fa-smile-wink"></i> and Love <i class="fas fa-heart"></i>
+                        by Ulfah Nur
+                        Oktaviana</a> </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <a href="http://youtube.com/ulfahnuroktaviana" class="btn btn-danger">Subscribe to Youtube
-                        <i class="glyphicon glyphicon-play"></i></a>
+                    <a href="https://github.com/ulfanuroktaviana575" class="btn btn-danger">Follow Me at GITHUB
+                        <i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
